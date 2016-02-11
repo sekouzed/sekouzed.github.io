@@ -1,0 +1,20 @@
+
+.headline {
+    padding: 73px 0 110px;
+    text-align: center;
+}
+
+.avatar img{
+     margin: auto;
+     max-width: 200px;
+ }
+footer{
+     text-align: center;
+ }
+.connect {
+    display: inline-block;
+    margin: 20px 10px;
+    /* width: 24px; */
+    font-size: 30px;
+    color: #34495E;
+}
