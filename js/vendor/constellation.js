@@ -1,3 +1,30 @@
+$(document).ready(function () {
+
+// Init plugin
+	radius=(window.innerWidth < 1024)? 0:150;
+
+	$('canvas').constellation({
+		star: {
+			width: 5
+		},
+		line: {
+			color: '#fff',
+			width: 0.1
+		},
+		radius: radius,
+		width: window.innerWidth,
+		// height: 500,
+		velocity: 0.1,
+		length: 100,
+		distance: 120
+	});
+
+});
+
+
+
+
+
 /*
  * requestAnimationFrame pollyfill
  */
@@ -6,15 +33,6 @@ if (!window.requestAnimationFrame) {
 		return window.setTimeout(callback, 1000 / 60);
 	});
 }
-
-// Init Stats
-/*var stats = new Stats();
-stats.setMode(0);
-stats.domElement.style.position = 'absolute';
-stats.domElement.style.left = '0px';
-stats.domElement.style.top = '0px';
-document.body.appendChild(stats.domElement);*/
-
 
 /*!
  * Mantis.js / jQuery / Zepto.js plugin for Constellation
@@ -196,22 +214,3 @@ document.body.appendChild(stats.domElement);*/
 		});
 	};
 })($, window);
-
-// Init plugin
-radius=(window.innerWidth < 1024)? 0:150;
-
-$('canvas').constellation({
-	star: {
-		width: 5
-	},
-	line: {
-		color: '#fff',
-		width: 0.1	
-	},
-	radius: radius,
-	width: window.innerWidth,
-	// height: 500,
-	velocity: 0.1,
-	length: 100,
-	distance: 120
-});
