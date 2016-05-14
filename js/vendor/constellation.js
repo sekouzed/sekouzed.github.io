@@ -198,6 +198,8 @@ document.body.appendChild(stats.domElement);*/
 })($, window);
 
 // Init plugin
+radius=(window.innerWidth < 1024)? 0:150;
+
 $('canvas').constellation({
 	star: {
 		width: 5
@@ -206,9 +208,9 @@ $('canvas').constellation({
 		color: '#fff',
 		width: 0.1	
 	},
-	radius: 250,
+	radius: radius,
 	width: window.innerWidth,
-	height: 500,
+	// height: 500,
 	velocity: 0.1,
 	length: 100,
 	distance: 120
