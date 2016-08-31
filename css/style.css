@@ -22,6 +22,10 @@ body {
      background-color: #0E1E32;
      background-image: url("../img/bg_stars.jpg");
  }
+
+a:hover{
+    text-decoration: underline;
+}
  .canvas-wrap {
      width: 100%;
      height: 100%;
