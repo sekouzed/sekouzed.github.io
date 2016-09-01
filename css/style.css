@@ -66,7 +66,7 @@ footer{
 
 .my_cv{
     color: #fff;
-    border: 1px solid #fff;
+    border: 1px solid rgba(74, 74, 74, 0.5);
     padding: 10px;
     display: block;
     border-radius: 4px;
