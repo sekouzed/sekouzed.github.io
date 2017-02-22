@@ -9,12 +9,12 @@ $(document).ready(function () {
 		},
 		line: {
 			color: '#fff',
-			width: 0.1
+			width: 0.2
 		},
 		radius: radius,
 		width: window.innerWidth,
 		// height: 500,
-		velocity: 0.1,
+		velocity: 0.2,
 		length: 100,
 		distance: 120
 	});
