@@ -20,7 +20,8 @@ body {
     /*background: #16a085;*/
     /* background: #122A48;*/
      background-color: #0E1E32;
-     background-image: url("../img/bg_stars.jpg");
+     background-image: url("../img/sekouzed-bg.jpg");
+    background-size: cover;
     padding: 20px;
  }
 
@@ -36,6 +37,10 @@ body {
      max-width: 560px;
      margin: auto;
      text-align: center;
+     padding: 15px;
+     background: rgba(0, 0, 0, 0.47);
+     border-radius: 6px;
+     border: 1px solid rgba(74, 74, 74, 0.5);
  }
  .headline h1 {
      font-size: 30px;
