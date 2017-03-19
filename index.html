@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="utf-8">
     <title>sekouzed</title>
@@ -23,9 +23,10 @@
     <![endif]-->
 </head>
 <body>
-<div class="canvas-wrap">
+
+<div class="container">
     <canvas></canvas>
-    <div class="headline">
+    <div class="content">
         <div class="row">
             <div class="col-md-12">
                 <div class="avatar">
@@ -37,76 +38,102 @@
                         Sekou Dioubaté
                     </a>
                 </h1>
-				<small style="font-size: 12px;">
-					Ingénieur en Logiciel et Système Informatique
-					<br>
+                <small style="font-size: 12px;">
+                    Ingénieur en Logiciel et Système Informatique
+                    <br>
                     <a href="http://sekouzed.github.io/?#backEndDeveloper" title="Sekouzed is a backEndDeveloper">
-						#backEndDeveloper
-                    </a>, 
+                        #backEndDeveloper
+                    </a>,
                     <a href="http://sekouzed.github.io/?#PHPDeveloper" title="Sekouzed is a PHPDeveloper">
-						#PHP
-                    </a>, 
+                        #PHP
+                    </a>,
                     <a href="http://sekouzed.github.io/?#rubyDeveloper" title="Sekouzed is a rubyDeveloper">
-						#RUBY
-                    </a>, 
+                        #RUBY
+                    </a>,
                     <a href="http://sekouzed.github.io/?#javaDeveloper" title="Sekouzed is a javaDeveloper">
-						#JAVA
+                        #JAVA
                     </a>
-				</small>
+                </small>
                 <h1>
-                    <a href="doc/cv-developpeur-fullstack-sekou-dioubate.pdf" title="Voir mon CV" class="my_cv">
+                    <a href="#" title="Voir mon CV" class="my_cv"
+                       data-toggle="modal" data-target="#myModal">
                         Voir mon CV
                         <img src="img/cv-sekou-dioubate-arrow.png">
                     </a>
+
                 </h1>
+                <a href="doc/cv-developpeur-fullstack-sekou-dioubate.pdf"
+                    title="Voir mon CV" target="_blank">
+                    <span class="fui-export"></span> Télécharger mon CV
+                </a>
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content" style="background: rgba(0, 0, 0, 0.47);border-radius: 6px;border: 1px solid rgba(255, 255, 255, 0.32);">
+                            <div class="modal-header" style="text-align: left">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                                        style="color: #fff !important;border: 1px solid ;padding: 0 5px;border-radius: 5px;"
+                                ><span aria-hidden="true">&times;</span></button>
+                                    <a  class="modal-title" id="myModalLabel"
+                                            href="doc/cv-developpeur-fullstack-sekou-dioubate.pdf"
+                                       title="Voir mon CV" target="_blank">
+                                        <span class="fui-export"></span> Télécharger mon CV
+                                    </a>
+                            </div>
+                            <div class="modal-body">
+                                <!--<hr>-->
+                                <object data="doc/cv-developpeur-fullstack-sekou-dioubate.pdf"
+                                        type="application/pdf" width="100%" height="700px" style="max-height: calc(70vh);">
+                                    alt : <a href="doc/cv-developpeur-fullstack-sekou-dioubate.pdf">
+                                            doc/cv-developpeur-fullstack-sekou-dioubate.pdf
+                                        </a>
+                                </object>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12">
-                <div class="connects">
-                    <a href="https://github.com/sekouzed" target="_blank" class="connect" data-toggle="tooltip"
-                       data-placement="bottom" title="Github">
-                        <i class="fa fa-github"></i>
-                    </a>
-                    <a href="https://play.google.com/store/apps/dev?id=5273035562401192488" target="_blank" class="connect" data-toggle="tooltip"
-                       data-placement="bottom" title="Android">
-                        <i class="fa fa-android"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/sekouzed/" target="_blank" class="connect" data-toggle="tooltip"
-                       data-placement="bottom" title="Linkedin">
-                        <i class="fa fa-linkedin"></i>
-                    </a>
-                    <a href="http://ma.viadeo.com/fr/profile/sekouzed/" target="_blank" class="connect"
-                       data-toggle="tooltip" data-placement="bottom" title="Viadeo">
-                        <i class="fa fa-viadeo"></i>
-                    </a>
-                    <a href="https://www.facebook.com/sekouzed" target="_blank" class="connect" data-toggle="tooltip"
-                       data-placement="bottom" title="Facebook">
-                        <i class="fa fa-facebook"></i>
-                    </a>
-                    <a href="https://twitter.com/sekouzed" target="_blank" class="connect" data-toggle="tooltip"
-                       data-placement="bottom" title="Twitter">
-                        <i class="fa fa-twitter"></i>
-                    </a>
-                    <a href="https://plus.google.com/u/0/+SekouDioubate" target="_blank" class="connect"
-                       data-toggle="tooltip" data-placement="bottom" title="Google Plus">
-                        <i class="fa fa-google-plus"></i>
-                    </a>
+                <div class="col-md-12">
+                    <div class="connects">
+                        <a href="https://github.com/sekouzed" target="_blank" class="connect" data-toggle="tooltip"
+                           data-placement="bottom" title="Github">
+                            <i class="fa fa-github"></i>
+                        </a>
+                        <a href="https://play.google.com/store/apps/dev?id=5273035562401192488" target="_blank" class="connect" data-toggle="tooltip"
+                           data-placement="bottom" title="Android">
+                            <i class="fa fa-android"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/sekouzed/" target="_blank" class="connect" data-toggle="tooltip"
+                           data-placement="bottom" title="Linkedin">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                        <a href="http://ma.viadeo.com/fr/profile/sekouzed/" target="_blank" class="connect"
+                           data-toggle="tooltip" data-placement="bottom" title="Viadeo">
+                            <i class="fa fa-viadeo"></i>
+                        </a>
+                        <a href="https://www.facebook.com/sekouzed" target="_blank" class="connect" data-toggle="tooltip"
+                           data-placement="bottom" title="Facebook">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com/sekouzed" target="_blank" class="connect" data-toggle="tooltip"
+                           data-placement="bottom" title="Twitter">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="https://plus.google.com/u/0/+SekouDioubate" target="_blank" class="connect"
+                           data-toggle="tooltip" data-placement="bottom" title="Google Plus">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
     </div>
 </div>
 
 
-<!-- /.container -->
-
-
-<!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
 <script src="js/vendor/jquery.min.js"></script>
 <script src="js/vendor/constellation.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<!--<script src="js/vendor/video.js"></script>-->
 <script src="js/flat-ui.min.js"></script>
 <script src="js/app.js"></script>
 
