@@ -53,7 +53,7 @@ body {
      /*border: 1px solid rgba(74, 74, 74, 0.5);*/
      border: 1px solid rgba(255, 255, 255, 0.32);
      padding: 2px;
-     /*border-radius: 50%;*/
+     border-radius: 2px;
 }
 footer{
      text-align: center;
@@ -83,8 +83,8 @@ canvas{
     border: 1px solid rgba(255, 255, 255, 0.32);
     padding: 10px;
     display: block;
-    border-radius: 4px;
-    margin: 30px auto;
+    border-radius: 2px;
+    margin: 15px auto;
 }
 
 .my_cv:hover{
