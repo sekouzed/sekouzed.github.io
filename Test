@@ -1,0 +1,58 @@
+
+
+Pour récupérer les membres d'un groupe LDAP avec Powershell, vous pouvez utiliser la commande `Get-ADGroupMember`². Cette commande permet de récupérer les membres d'un groupe Active Directory. Si vous souhaitez récupérer les membres d'un groupe LDAP, vous pouvez utiliser la commande `Get-ADObject`⁴. 
+
+Voici un exemple de commande pour récupérer les membres d'un groupe LDAP avec Powershell : 
+
+```powershell
+$group = Get-ADObject -Filter {cn -eq "NomDuGroupe"} -SearchBase "OU=MonOU,DC=MonDomaine,DC=com"
+$members = Get-ADObject -Filter {memberof -eq $group.distinguishedName} -SearchBase "OU=MonOU,DC=MonDomaine,DC=com"
+```
+
+Dans cet exemple, `$group` est une variable qui contient l'objet groupe LDAP que vous souhaitez interroger. `$members` est une variable qui contient la liste des membres du groupe.
+
+J'espère que cela vous aidera. N'hésitez pas à me poser des questions si vous avez besoin de plus d'informations.
+
+Source : conversation avec Bing, 01/04/2023(1) Récupérer la liste des membres d’un groupe AD | IT-Connect. https://www.it-connect.fr/chapitres/recuperer-la-liste-des-membres-dun-groupe-ad/ Consultée 01/04/2023.
+(2) How to query for members of an LDAP group using Powershell not in MS .... https://stackoverflow.com/questions/14510254/how-to-query-for-members-of-an-ldap-group-using-powershell-not-in-ms-active-dire Consultée 01/04/2023.
+(3) Afficher les membres d’un groupe de distribution dynamique dans .... https://learn.microsoft.com/fr-fr/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/view-group-members Consultée 01/04/2023.
+(4) 4. Connecter les clients LDAP au service LDAP sécurisé. https://support.google.com/cloudidentity/answer/9089736?hl=fr Consultée 01/04/2023.
+(5) Get-ADGroupMember (ActiveDirectory) | Microsoft Learn. https://learn.microsoft.com/en-us/powershell/module/activedirectory/get-adgroupmember?view=windowsserver2022-ps Consultée 01/04/2023.
+(6) powershell - LDAP Filter for Members Of a Group - Server Fault. https://serverfault.com/questions/978336/ldap-filter-for-members-of-a-group Consultée 01/04/2023.
+
+
+
+Pour vous connecter à un URL LDAP avec login et password, vous pouvez utiliser la commande `New-Object` pour créer un objet de connexion LDAP et la commande `DirectorySearcher` pour effectuer une recherche dans l'annuaire LDAP³.
+
+Voici un exemple de commande pour se connecter à un URL LDAP avec login et password :
+
+```powershell
+$ldap = New-Object System.DirectoryServices.DirectoryEntry("LDAP://monserveur:389/OU=MonOU,DC=MonDomaine,DC=com","NomUtilisateur","MotDePasse")
+```
+
+Dans cet exemple, `$ldap` est une variable qui contient l'objet de connexion LDAP. Vous pouvez ensuite utiliser la commande `DirectorySearcher` pour effectuer une recherche dans l'annuaire LDAP.
+
+J'espère que cela vous aidera. N'hésitez pas à me poser des questions si vous avez besoin de plus d'informations.
+
+Source : conversation avec Bing, 01/04/2023(1) Connexion à un open ldap avec PowerShell. https://social.technet.microsoft.com/Forums/fr-FR/35566b20-e3e1-4a13-8c18-97eb4ac53f92/connexion-un-open-ldap-avec-powershell Consultée 01/04/2023.
+(2) Activer le protocole LDAP sur SSL avec une autorité de certification tierce. https://learn.microsoft.com/fr-fr/troubleshoot/windows-server/identity/enable-ldap-over-ssl-3rd-certification-authority Consultée 01/04/2023.
+(3) 4. Connecter les clients LDAP au service LDAP sécurisé. https://support.google.com/cloudidentity/answer/9089736?hl=fr Consultée 01/04/2023.
+(4) Authentification LDAP | Authentification, autorisation et audit du .... https://docs.citrix.com/fr-fr/citrix-adc/current-release/aaa-tm/authentication-methods/citrix-adc-aaa-ldap-authentication-policies.html Consultée 01/04/2023.
+(5) Login et password dans l'URL [Résolu] - CommentCaMarche. https://forums.commentcamarche.net/forum/affich-35943968-login-et-password-dans-l-url Consultée 01/04/2023.
+
+
+Bien sûr ! Voici un exemple de commande pour rechercher tous les utilisateurs d'un groupe LDAP avec Powershell :
+
+```powershell
+$ldap = New-Object System.DirectoryServices.DirectoryEntry("LDAP://monserveur:389/OU=MonOU,DC=MonDomaine,DC=com","NomUtilisateur","MotDePasse")
+$searcher = New-Object System.DirectoryServices.DirectorySearcher($ldap)
+$searcher.Filter = "(&(objectClass=user)(memberOf=CN=NomDuGroupe,OU=MonOU,DC=MonDomaine,DC=com))"
+$searcher.FindAll()
+```
+
+Dans cet exemple, `$searcher` est une variable qui contient l'objet de recherche LDAP. La propriété `Filter` de l'objet `$searcher` est définie pour rechercher tous les utilisateurs qui sont membres du groupe LDAP spécifié.
+
+J'espère que cela vous aidera. N'hésitez pas à me poser des questions si vous avez besoin de plus d'informations.
+
+Le sam. 1 avr. 2023, 05:14, Sekou Dioubate <dioubatesekou@gmail.com> a écrit :
+Découvrez l’application Bing intégrant le nouveau Bing doté de l’intelligence artificielle ! : https://bingapp.microsoft.com/bing?adjust=gfv2crx_717ll9t&style=sydney 
